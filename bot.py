@@ -1,3 +1,4 @@
+# i know the code is super unsafe, just for fun, so does not really matter to me atleast
 import sqlite3
 from telegram import Update
 from telegram.ext import (
