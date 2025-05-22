@@ -12,7 +12,6 @@ from telegram.ext import (
 TOKEN = ""
 ADMIN_UUIDS = [] # STORE AS INTS STATICLY
 
-
 connection = sqlite3.connect("database.db")
 cursor = connection.cursor()
 cursor.execute('''
