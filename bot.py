@@ -8,9 +8,10 @@ from telegram.ext import (
     ContextTypes, 
     Application
 )
+from decouple import config, Csv
 
-TOKEN = ""
-ADMIN_UUIDS = [] # STORE AS INTS STATICLY
+TOKEN = config("TOKEN")
+ADMIN_UUIDS = config("ADMIN_UUIDS", cast=Csv(int))
 
 connection = sqlite3.connect("database.db")
 cursor = connection.cursor()
